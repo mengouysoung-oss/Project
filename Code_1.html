@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cryptography Educational Tool</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>🔐 Cryptography Educational Tool</h1>
+
+    <div class="tabs">
+        <button class="tab-button active" onclick="switchTab('caesar')">Caesar Cipher</button>
+        <button class="tab-button" onclick="switchTab('shift')">General Shift</button>
+        <button class="tab-button" onclick="switchTab('affine')">Affine Cipher</button>
+        <button class="tab-button" onclick="switchTab('transposition')">Transposition</button>
+        <button class="tab-button" onclick="switchTab('rsa')">RSA</button>
+    </div>
+
+    <!-- Caesar Cipher Tab -->
+    <div id="caesar" class="tab-content active"></div>
+
+    <!-- General Shift Cipher Tab -->
+    <div id="shift" class="tab-content"></div>
+
+    <!-- Affine Cipher Tab -->
+    <div id="affine" class="tab-content"></div>
+
+    <!-- Transposition Cipher Tab -->
+    <div id="transposition" class="tab-content"></div>
+
+    <!-- RSA Tab -->
+    <div id="rsa" class="tab-content"></div>
+</div>
+
+<!-- Utility Scripts -->
+<script src="js/utils.js"></script>
+
+<!-- Cipher Scripts -->
+<script src="js/ciphers/caesar-cipher.js"></script>
+<script src="js/ciphers/general-shift-cipher.js"></script>
+<script src="js/ciphers/affine-cipher.js"></script>
+<script src="js/ciphers/transposition-cipher.js"></script>
+<script src="js/ciphers/rsa-cryptography.js"></script>
+
+<!-- Main App Script -->
+<script src="js/app.js"></script>
+
+</body>
+</html>
